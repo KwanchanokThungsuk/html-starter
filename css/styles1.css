@@ -1,1 +1,363 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Arial", sans-serif;
+}
+
+.back1 {
+    background-color: antiquewhite;
+}
+
+.back1-gif{
+    display: flex;
+    margin-top: -2rem;
+}
+
+.back1-gif .gif1{
+    margin-right: 20rem;
+}
+
+.back1-gif .gif2{
+    height: 10rem;
+    margin-top: 7rem;
+}
+
+.container2-title {
+    text-align: center;
+    background-color: #11542b;
+    color: #fff;
+    padding: 1rem
+}
+
+.firstpage {
+    margin: 5rem 4rem;
+    margin-left: 22rem;
+    background-color: #64a273;
+    display: inline-block;
+    text-align: center; /* จัดรูปภาพและลิงก์ให้อยู่ตรงกลาง */
+    padding: 1rem;
+    box-sizing: border-box; /* ป้องกัน padding เพิ่มขนาดของกล่อง */
+    border-radius: 10px;
+}
+
+.firstpage a {
+    text-decoration: none;
+    background-color: #8cc797;
+    padding: 0.4rem;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 1rem; /* เพิ่มระยะห่างด้านบนระหว่างรูปภาพกับลิงก์ */
+    color: #000;
+}
+
+.firstpage a:hover {
+    text-decoration: underline;
+}
+
+.firstpage img {
+    display: block;
+    max-width: 25%; /* ทำให้รูปภาพพอดีกับขนาดของกล่อง */
+    height: auto;    /* รักษาสัดส่วนของรูปภาพ */
+    margin: 0 auto;  /* จัดรูปให้อยู่ตรงกลาง */
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 1 auto;
+}
+
+nav {
+    /* padding: 1rem; */
+    background-color: #11542b;
+    padding: 10px; /* การเว้นระยะรอบ ๆ */
+            position: fixed; /* กำหนดให้ Navbar ตรึงตำแหน่ง */
+            top: 0; /* อยู่ที่ด้านบน */
+            left: 0;
+            width: 100%; /* กำหนดให้ครอบคลุมเต็มหน้าจอในแนวนอน */
+            z-index: 1000; /* ทำให้ Navbar อยู่เหนือส่วนอื่น ๆ ของหน้า */
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo a {
+    font-size: 2rem;
+    color: #fef8f8;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.Home {
+    background-color: #8cc797;
+    margin-top: 3rem;
+}
+
+.hero-info h1 {
+    display: inline-block;
+    color: #fff;
+    background-color:#11542b;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+.hero-con {
+    display: flex;
+}
+
+.hero-info p {
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.hero-img img {
+    width: 60%;
+    padding: 3rem;
+    display: none; /* เริ่มต้นซ่อนภาพ */
+    transition: transform 0.5s ease; /* ทำให้ภาพเด้งนุ่มนวล */
+}
+
+.hero-img img.show {
+    display: block; /* แสดงภาพเมื่อคลาส .show ถูกเพิ่ม */
+    transform: scale(1.1); /* ทำให้ภาพเด้งเล็กน้อย */
+}
+ 
+
+.hero-info {
+    width: 100%;
+    padding: 2rem;
+}
+
+.hero-info a:hover {
+    text-decoration: underline;
+}
+
+.hero-info h3 {
+    font-size: 2rem;
+
+}
+
+.hero-info p {
+    margin: 1rem 0;
+}
+
+.hero-info .hero-btn {
+    display: inline-block;
+    background-color: rgb(11, 75, 39);
+    color: #fff;
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.blog {
+    background-color: #8cc797;
+    padding: 3rem;
+}
+
+.blog-con {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 2rem;
+}
+
+.blog-title h1 {
+    display: inline-block;
+    color: #fff;
+    background-color: #11542b;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.blog-con .blog-item:nth-child(1), .blog-con .blog-item:nth-child(2), .blog-con .blog-item:nth-child(3) {
+    background-color: #69a472;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.blog-title {
+    margin: 2rem;
+}
+
+.blog-item img {
+    width: 50%;
+    padding: 1rem;
+    margin-left: 4rem;
+}
+
+.blog-item h4 {
+    margin-top: 1rem;
+    text-align: center;
+} 
+
+.blog-item p {
+    margin: 1rem 0;
+}
+
+.blog-item a {
+    display: inline-block;
+    color: #fff;
+    background-color: rgb(11, 75, 39);
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.blog-item a:hover {
+    text-decoration: underline;
+}
+
+.skill {
+    background-color: #8cc797;
+    padding: 1rem;
+}
+
+.skill-title h2 {
+    display: inline-block;
+    background-color: #11542b;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    color: #fff
+}
+
+.skill .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 2rem;
+}
+
+.inskill-all {
+    display: flex;
+}
+
+.inskill {
+    background-color: #69a472;
+    border-radius: 10px;
+}
+
+.inskill-all p {
+    margin-top: 2.5rem;
+    font-size: 30px;
+    color: #fff;
+}
+
+.inskill-imag {
+    width: 30%;
+    margin: 1rem;
+}
+
+.port {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 2rem;
+    background-color: #8cc797;
+}
+
+.port {
+    margin: 1rem 0;
+    padding: 2rem;
+}
+
+.port-all {
+    background-color: #69a472;
+    border-radius: 20px;
+
+}
+
+.port-all h2 {
+    display: inline-block;
+    margin-left: 7rem;
+    background-color: #11542b;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #fff;
+}
+
+.port .port-all p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.port-btn {
+    display: inline-block;
+    background-color: #11542b;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+
+}
+
+.port-all a:hover {
+    text-decoration: underline;
+}
+
+.port-all img {
+    width: 50%;
+    margin: 2rem 10rem;
+}
+
+.footer-top {
+
+    margin-top: 0rem;
+    padding: 3rem;
+    background-color: #333;
+    color: #fff;
+
+}
+
+.footer-top-item h1 {
+    margin-bottom: 3rem;
+}
+
+.footer-top-item p {
+    display: flex;
+}
+
+
+.footer-top-item i {
+    margin-right: 1rem;
+}
+
+.footer-top-item a {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #226242;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.sec {
+    padding-top: 30px;
+}
 
