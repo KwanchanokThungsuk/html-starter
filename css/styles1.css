@@ -32,37 +32,36 @@ body {
 }
 
 .firstpage {
-    margin: 5rem 4rem;
-    margin-left: 22rem;
+    margin: 2rem auto;
+    width: 400px; /* เพิ่มความกว้างของกล่องสีเขียว */
     background-color: #64a273;
-    display: inline-block;
-    text-align: center; /* จัดรูปภาพและลิงก์ให้อยู่ตรงกลาง */
-    padding: 1rem;
-    box-sizing: border-box; /* ป้องกัน padding เพิ่มขนาดของกล่อง */
+    text-align: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
     border-radius: 10px;
+}
+
+
+.firstpage img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem; 
 }
 
 .firstpage a {
     text-decoration: none;
     background-color: #8cc797;
-    padding: 0.4rem;
+    padding: 0.4rem 1.5rem;
     border-radius: 7px;
-    display: inline-block;
-    margin-top: 1rem; /* เพิ่มระยะห่างด้านบนระหว่างรูปภาพกับลิงก์ */
     color: #000;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .firstpage a:hover {
     text-decoration: underline;
 }
-
-.firstpage img {
-    display: block;
-    max-width: 25%; /* ทำให้รูปภาพพอดีกับขนาดของกล่อง */
-    height: auto;    /* รักษาสัดส่วนของรูปภาพ */
-    margin: 0 auto;  /* จัดรูปให้อยู่ตรงกลาง */
-}
-
 
 .container {
     max-width: 1140px;
@@ -70,14 +69,13 @@ body {
 }
 
 nav {
-    /* padding: 1rem; */
     background-color: #11542b;
-    padding: 10px; /* การเว้นระยะรอบ ๆ */
-            position: fixed; /* กำหนดให้ Navbar ตรึงตำแหน่ง */
-            top: 0; /* อยู่ที่ด้านบน */
+    padding: 10px; 
+            position: fixed; 
+            top: 0; 
             left: 0;
-            width: 100%; /* กำหนดให้ครอบคลุมเต็มหน้าจอในแนวนอน */
-            z-index: 1000; /* ทำให้ Navbar อยู่เหนือส่วนอื่น ๆ ของหน้า */
+            width: 100%; 
+            z-index: 1000; 
 }
 
 .nav-con {
@@ -137,13 +135,13 @@ nav {
 .hero-img img {
     width: 60%;
     padding: 3rem;
-    display: none; /* เริ่มต้นซ่อนภาพ */
-    transition: transform 0.5s ease; /* ทำให้ภาพเด้งนุ่มนวล */
+    display: none; 
+    transition: transform 0.5s ease; 
 }
 
 .hero-img img.show {
-    display: block; /* แสดงภาพเมื่อคลาส .show ถูกเพิ่ม */
-    transform: scale(1.1); /* ทำให้ภาพเด้งเล็กน้อย */
+    display: block; 
+    transform: scale(1.1); 
 }
  
 
@@ -360,4 +358,3 @@ nav {
 .sec {
     padding-top: 30px;
 }
-
